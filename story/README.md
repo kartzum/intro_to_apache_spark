@@ -30,4 +30,17 @@
 
 ## Базовые структуры языка
 
-* scala_basic_pr
+### scala_basic_pr
+
+#### Introduction
+#### Basics
+#### UnifiedTypes
+#### Classes
+#### HigherOrderFunctions
+#### MultipleParameterListsCurrying
+#### Collections
+#### GenericClasses
+#### Operators
+#### Variances
+#### MapReduce
+#### Transformers
