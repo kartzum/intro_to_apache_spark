@@ -1,4 +1,4 @@
-package aa.bb.cc
+package aa.bb.cc.scala_basic
 
 // https://docs.scala-lang.org/tour/multiple-parameter-lists.html
 // https://alvinalexander.com/scala/scala-collections-classes-methods-organized-category/

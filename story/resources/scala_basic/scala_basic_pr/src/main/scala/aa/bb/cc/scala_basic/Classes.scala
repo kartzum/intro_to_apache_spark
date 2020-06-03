@@ -1,4 +1,4 @@
-package aa.bb.cc
+package aa.bb.cc.scala_basic
 
 // https://docs.scala-lang.org/tour/classes.html
 // https://alvinalexander.com/scala/how-to-class-superclass-constructor-in-scala-parent-class/

@@ -1,4 +1,4 @@
-package aa.bb.cc
+package aa.bb.cc.scala_basic
 
 // https://docs.scala-lang.org/tour/generic-classes.html
 // https://alvinalexander.com/scala/scala-classes-using-generic-types-examples/

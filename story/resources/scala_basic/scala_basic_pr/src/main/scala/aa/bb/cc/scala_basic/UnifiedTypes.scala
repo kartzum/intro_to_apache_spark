@@ -1,4 +1,4 @@
-package aa.bb.cc
+package aa.bb.cc.scala_basic
 
 // https://docs.scala-lang.org/tour/unified-types.html
 object UnifiedTypes {

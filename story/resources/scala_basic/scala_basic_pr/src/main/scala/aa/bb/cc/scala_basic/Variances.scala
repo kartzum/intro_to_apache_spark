@@ -1,6 +1,4 @@
-package aa.bb.cc
-
-import aa.bb.cc.Variances.Contravariance.Invariance
+package aa.bb.cc.scala_basic
 
 // https://docs.scala-lang.org/tour/variances.html
 // https://www.james-willett.com/scala-generics/

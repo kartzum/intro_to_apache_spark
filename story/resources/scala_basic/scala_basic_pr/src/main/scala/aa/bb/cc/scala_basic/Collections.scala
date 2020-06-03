@@ -1,4 +1,4 @@
-package aa.bb.cc
+package aa.bb.cc.scala_basic
 
 // https://docs.scala-lang.org/overviews/collections/overview.html
 // https://alvinalexander.com/scala/scala-collections-classes-methods-organized-category/

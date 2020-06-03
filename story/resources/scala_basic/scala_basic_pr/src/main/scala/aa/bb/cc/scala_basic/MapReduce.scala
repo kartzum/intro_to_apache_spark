@@ -1,4 +1,4 @@
-package aa.bb.cc
+package aa.bb.cc.scala_basic
 
 // https://janzhou.org/2015/scala-functional-programming-for-word-count.html
 // https://en.wikipedia.org/wiki/MapReduce
