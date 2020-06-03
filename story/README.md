@@ -84,3 +84,35 @@ distData: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[0] at paralleliz
 
 scala>
 ```
+
+# Spark Basic
+
+## Материалы для изучения 
+
+* [rdd-programming](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
+* [sql-programming](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+
+# Spark Libraries
+
+## Материалы для изучения 
+
+* [Документация](https://spark.apache.org/)
+
+# Spark ML
+
+## Материалы для изучения 
+
+* [Документация](https://spark.apache.org/docs/latest/ml-guide.html)
+
+# Spark ML Examples
+
+## Материалы для изучения 
+
+* [Документация](https://spark.apache.org/docs/latest/ml-guide.html)
+
+# Spark Streaming
+
+## Материалы для изучения 
+
+* [Документация](https://spark.apache.org/streaming/)
+
