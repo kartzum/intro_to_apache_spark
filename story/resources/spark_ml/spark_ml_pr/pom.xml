@@ -15,7 +15,7 @@
         <compiler.scala.version>2.11.12</compiler.scala.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <compiler.scala.binary.version>2.11</compiler.scala.binary.version>
-        <scalatest-maven-plugin.version>3.3.2</scalatest-maven-plugin.version>
+        <scalatest-maven-plugin.version>2.0.0</scalatest-maven-plugin.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
     </properties>
@@ -29,7 +29,6 @@
                     <version>${scala-maven-plugin.version}</version>
                     <configuration>
                         <args>
-                            <arg>-Xfatal-warnings</arg>
                         </args>
                         <jvmArgs>
                             <jvmArg>-Xmx2048m</jvmArg>
@@ -86,6 +85,53 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <profiles>
+        <profile>
+            <id>scala</id>
+            <activation>
+                <file>
+                    <exists>src/main/scala</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>net.alchim31.maven</groupId>
+                        <artifactId>scala-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>compile-scala</id>
+                                <goals>
+                                    <goal>compile</goal>
+                                </goals>
+                                <phase>compile</phase>
+                            </execution>
+                            <execution>
+                                <id>testCompile-scala</id>
+                                <goals>
+                                    <goal>testCompile</goal>
+                                </goals>
+                                <phase>test-compile</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.scalatest</groupId>
+                        <artifactId>scalatest-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>test-scala</id>
+                                <goals>
+                                    <goal>test</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
     <modules>
         <module>cluster</module>
