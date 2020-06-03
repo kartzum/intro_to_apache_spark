@@ -44,3 +44,43 @@
 #### Variances
 #### MapReduce
 #### Transformers
+
+# Spark Installation
+
+## Материалы для изучения 
+
+* [Документация по установке Spark](http://spark.apache.org/docs/latest/index.html)
+
+## Установка
+
+### Java
+
+* [JDK](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html)
+* java - help
+
+### Spark
+
+* [Описание](https://spark.apache.org/news/spark-3.0.0-preview.html)
+* [spark-3.0.0](https://www.apache.org/dyn/closer.lua/spark/spark-3.0.0-preview2/spark-3.0.0-preview2-bin-hadoop3.2.tgz)
+* Распокавать tar -xvzf ./spark-3.0.0-preview2-bin-hadoop3.2.tgz
+* Запустить ./bin/spark-shell
+
+# Spark Shell
+
+## Материалы для изучения 
+
+* [Документация](https://spark.apache.org/docs/latest/quick-start.html)
+* [Знакомство со Spark](https://www.tutorialspoint.com/apache_spark/apache_spark_quick_guide.htm)
+* [rdd-programming](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
+
+### Работа
+
+```
+scala> val data = Array(1, 2, 3, 4, 5)
+data: Array[Int] = Array(1, 2, 3, 4, 5)
+
+scala> val distData = sc.parallelize(data)
+distData: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[0] at parallelize at <console>:26
+
+scala>
+```
