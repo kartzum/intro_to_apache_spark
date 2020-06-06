@@ -6,9 +6,10 @@ import org.scalatest.{Matchers, Outcome, fixture}
 
 class LinearRegressionExSuite extends fixture.FunSuite with Matchers {
   test("simple") { spark =>
-    import spark.implicits._
     // https://machinelearningmastery.com/simple-linear-regression-tutorial-for-machine-learning/
     // https://www.instaclustr.com/support/documentation/cassandra-add-ons/apache-spark/spark-mllib-linear-regression-example/
+    // https://spark.apache.org/docs/3.0.0-preview/ml-classification-regression.html#linear-regression
+    import spark.implicits._
     val data = Seq(
       (1, 1),
       (2, 3),

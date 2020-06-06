@@ -104,6 +104,11 @@ scala>
 
 * [Документация](https://spark.apache.org/docs/latest/ml-guide.html)
 
+### spark_ml_pr
+
+#### LinearRegressionEx
+#### LogisticRegressionEx
+
 # Spark ML Examples
 
 ## Материалы для изучения 
@@ -116,3 +121,6 @@ scala>
 
 * [Документация](https://spark.apache.org/streaming/)
 
+# Ресурсы
+
+https://www.geogebra.org/
