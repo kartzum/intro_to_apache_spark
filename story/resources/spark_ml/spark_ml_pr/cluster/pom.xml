@@ -17,6 +17,8 @@
         <scalatest.version>3.1.0</scalatest.version>
 
         <spark.version>3.0.0-preview2</spark.version>
+
+        <jackson-core.version>2.10.0</jackson-core.version>
     </properties>
 
     <dependencyManagement>
@@ -65,6 +67,21 @@
                 <groupId>org.apache.spark</groupId>
                 <artifactId>spark-sql_${compiler.scala.binary.version}</artifactId>
                 <version>${spark.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson-core.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
