@@ -110,6 +110,7 @@ scala>
 #### LogisticRegressionEx
 #### GBTClassifierEx
 #### GBTRegressorEx
+#### KMeansEx
 
 # Spark ML Examples
 
