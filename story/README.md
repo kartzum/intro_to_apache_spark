@@ -118,6 +118,10 @@ scala>
 
 * [Документация](https://spark.apache.org/docs/latest/ml-guide.html)
 
+### spark_ml_pr
+
+#### BsClustering
+
 # Spark Streaming
 
 ## Материалы для изучения 
@@ -126,4 +130,4 @@ scala>
 
 # Ресурсы
 
-https://www.geogebra.org/
+* [geogebra](https://www.geogebra.org/)
