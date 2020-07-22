@@ -92,6 +92,10 @@ scala>
 * [rdd-programming](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
 * [sql-programming](https://spark.apache.org/docs/latest/sql-programming-guide.html)
 
+### spark_ml_pr
+
+#### RddEx
+
 # Spark Libraries
 
 ## Материалы для изучения 
