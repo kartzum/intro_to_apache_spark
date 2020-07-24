@@ -6,6 +6,8 @@ import org.apache.spark.sql.functions.udf
 // https://spark.apache.org/docs/latest/sql-getting-started.html
 // https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql-udfs.html
 // https://www.dofactory.com/sql/join
+// https://www.educba.com/join-in-spark-sql/
+// https://www.oreilly.com/library/view/high-performance-spark/9781491943199/ch04.html
 
 object SqlEx {
   def createDf(spark: SparkSession): Unit = {
