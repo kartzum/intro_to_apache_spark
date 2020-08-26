@@ -61,6 +61,14 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
         </dependency>
+        <dependency>
+            <groupId>ml.dmlc</groupId>
+            <artifactId>xgboost4j_${compiler.scala.binary.version}</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ml.dmlc</groupId>
+            <artifactId>xgboost4j-spark_${compiler.scala.binary.version}</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

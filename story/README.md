@@ -115,6 +115,7 @@ scala>
 #### GBTClassifierEx
 #### GBTRegressorEx
 #### KMeansEx
+#### PipelinesEx
 
 # Spark ML Examples
 
@@ -125,12 +126,17 @@ scala>
 ### spark_ml_pr
 
 #### BsClustering
+#### BsClassification
 
 # Spark Streaming
 
 ## Материалы для изучения 
 
 * [Документация](https://spark.apache.org/streaming/)
+
+### spark_ml_pr
+
+#### StreamingEx
 
 # Ресурсы
 
