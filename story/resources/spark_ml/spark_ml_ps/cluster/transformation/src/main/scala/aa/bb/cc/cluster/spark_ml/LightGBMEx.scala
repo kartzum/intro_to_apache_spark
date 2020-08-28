@@ -15,23 +15,28 @@ object LightGBMEx {
       model = train(input)
     }
 
+    def transform(inTableName: String): DataFrame = {
+      val input = prepare(inTableName)
+      model.transform(input)
+    }
+
     private def prepare(inTableName: String): DataFrame = {
       spark.sql(s"select * from $inTableName")
     }
 
     private def train(input: DataFrame): PipelineModel = {
       val assembler = new VectorAssembler()
-        .setInputCols(Array("x1", "x2"))
+        .setInputCols(Array("x1", "x2", "x3", "x4"))
         .setOutputCol("features")
 
       val lgbClf = new LightGBMClassifier()
-        .setFeaturesCol("features").
-        setLabelCol("label").
-        setProbabilityCol("prob").
-        setRawPredictionCol("raw_pred").
-        setPredictionCol("predict").
-        setObjective("binary").
-        setIsUnbalance(true)
+        .setFeaturesCol("features")
+        .setLabelCol("label")
+        .setProbabilityCol("prob")
+        .setRawPredictionCol("raw_pred")
+        .setPredictionCol("predict")
+        .setObjective("binary")
+        .setNumLeaves(2)
 
       val pipeline = new Pipeline().setStages(Array(assembler, lgbClf))
 
