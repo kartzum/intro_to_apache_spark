@@ -24,7 +24,7 @@ class BsClassification(private val spark: SparkSession) {
 
   private def train(input: DataFrame): PipelineModel = {
     val assembler = new VectorAssembler()
-      .setInputCols(Array("x1", "x2"))
+      .setInputCols(Array("x1", "x2", "x3", "x4"))
       .setOutputCol("features")
 
     val booster = new XGBoostClassifier(
