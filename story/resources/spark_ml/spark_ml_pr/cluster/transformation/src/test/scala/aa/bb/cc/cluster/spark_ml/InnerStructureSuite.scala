@@ -3,19 +3,19 @@ package aa.bb.cc.cluster.spark_ml
 import java.lang
 
 import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}
-import org.apache.spark.sql.execution.WholeStageCodegenExec
+// import org.apache.spark.sql.execution.WholeStageCodegenExec
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.{Outcome, fixture}
 
 // org.apache.spark.sql.execution.WholeStageCodegenSuite
 
 class InnerStructureSuite extends fixture.FunSuite with Matchers {
-  test("check_find") { spark =>
+  /*test("check_find") { spark =>
     val df = spark.range(10).filter("id = 1").selectExpr("id + 1")
     val plan = df.queryExecution.executedPlan
     assert(plan.find(_.isInstanceOf[WholeStageCodegenExec]).isDefined)
     assert(df.collect() === Array(Row(2)))
-  }
+  }*/
 
   test("check_execute") { spark =>
     val df: DataFrame = spark.range(10).filter("id = 1").selectExpr("id + 1")
